@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+
+        <TextView
+            android:id="@+id/pymasde_es"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dip"
+            android:paddingLeft="30dip"
+            android:paddingRight="30dip"
+            android:singleLine="true"
+            android:textStyle="bold"
+            android:text="@string/pymasde_es" />
+
+        <ImageView
+            android:id="@+id/pymasdeabout"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:paddingTop="10dip"
+            android:src="@drawable/pymasdeabout" >
+        </ImageView>
+
+
+        <TextView
+
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dip"
+            android:paddingLeft="30dip"
+            android:paddingRight="30dip"
+            android:textStyle="bold"
+            android:text="@string/softhouse" />
+
+        <ImageView
+
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:src="@drawable/softhouse_icon" >
+        </ImageView>
+
+
+        <TextView
+
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:text="+" />
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:src="@drawable/assa_abloy_logo" >
+        </ImageView>
+
+        <Button
+            android:id="@+id/buttonDialog"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/alert_dialog_ok"
+            android:layout_margin="40dp">
+        </Button>
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Copyright (C) 2008 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory android:title="@string/general_preferences">
+
+        <ListPreference
+            android:defaultValue="@string/default_screenorientation_preference"
+            android:dialogTitle="@string/dialog_title_screenorientation_preference"
+            android:entries="@array/entries_screenorientation_preference"
+            android:entryValues="@array/entryvalues_screenorientation_preference"
+            android:key="screenorientation"
+            android:summary="@string/summary_screenorientation_preference"
+            android:title="@string/title_screenorientation_preference" />
+
+        <CheckBoxPreference
+            android:defaultValue="@string/default_value_localecho_preference"
+            android:key="localecho"
+            android:summary="@string/summary_localecho_preference"
+            android:title="@string/title_localhecho_preference"
+            />
+
+        <CheckBoxPreference
+            android:defaultValue="@string/default_value_allowinsecureconnections_preference"
+            android:key="allowinsecureconnections"
+            android:summary="@string/summary_allowinsecureconnections_preference"
+            android:title="@string/title_allowinsecureconnections_preference"
+            />
+    </PreferenceCategory>
+
+
+    <PreferenceCategory android:title="@string/text_preferences">
+
+        <ListPreference
+            android:defaultValue="@string/default_value_fontsize_preference"
+            android:dialogTitle="@string/dialog_title_fontsize_preference"
+            android:entries="@array/entries_fontsize_preference"
+            android:entryValues="@array/entryvalues_fontsize_preference"
+            android:key="fontsize"
+            android:summary="@string/summary_fontsize_preference"
+            android:title="@string/title_fontsize_preference" />
+
+
+        <ListPreference
+            android:defaultValue="@string/default_value_color_preference"
+            android:dialogTitle="@string/dialog_title_color_preference"
+            android:entries="@array/entries_color_preference"
+            android:entryValues="@array/entryvalues_color_preference"
+            android:key="color"
+            android:summary="@string/summary_color_preference"
+            android:title="@string/title_color_preference" />
+
+    </PreferenceCategory>
+
+
+
+
+    <PreferenceCategory android:title="@string/incoming_end_of_line">
+        <ListPreference
+            android:defaultValue="@string/default_value_end_of_line_0D_preference"
+            android:dialogTitle="@string/dialog_title_incoming_end_of_line_0D_preference"
+            android:entries="@array/entries_end_of_line_0D_preference"
+            android:entryValues="@array/entryvalues_end_of_line_0D_preference"
+            android:key="incoming_eol_0D"
+            android:summary="@string/summary_end_of_line_0D_preference"
+            android:title="@string/title_end_of_line_0D_preference" />
+
+        <ListPreference
+            android:defaultValue="@string/default_value_end_of_line_0A_preference"
+            android:dialogTitle="@string/dialog_title_incoming_end_of_line_0A_preference"
+            android:entries="@array/entries_end_of_line_0A_preference"
+            android:entryValues="@array/entryvalues_end_of_line_0A_preference"
+            android:key="incoming_eol_0A"
+            android:summary="@string/summary_end_of_line_0A_preference"
+            android:title="@string/title_end_of_line_0A_preference" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/outgoing_end_of_line">
+
+        <ListPreference
+            android:defaultValue="@string/default_value_end_of_line_0D_preference"
+            android:dialogTitle="@string/dialog_title_outgoing_end_of_line_0D_preference"
+            android:entries="@array/entries_end_of_line_0D_preference"
+            android:entryValues="@array/entryvalues_end_of_line_0D_preference"
+            android:key="outgoing_eol_0D"
+            android:summary="@string/summary_end_of_line_0D_preference"
+            android:title="@string/title_end_of_line_0D_preference" />
+
+        <ListPreference
+            android:defaultValue="@string/default_value_end_of_line_0A_preference"
+            android:dialogTitle="@string/dialog_title_outgoing_end_of_line_0A_preference"
+            android:entries="@array/entries_end_of_line_0A_preference"
+            android:entryValues="@array/entryvalues_end_of_line_0A_preference"
+            android:key="outgoing_eol_0A"
+            android:summary="@string/summary_end_of_line_0A_preference"
+            android:title="@string/title_end_of_line_0A_preference" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/keyboard_preferences">
+
+        <ListPreference
+            android:defaultValue="44"
+            android:dialogTitle="@string/dialog_title_controlkey_preference"
+            android:entries="@array/entries_tabkey_preference"
+            android:entryValues="@array/entryvalues_tabkey_preference"
+            android:key="tabkey"
+            android:summary="@string/summary_tabkey_preference"
+            android:title="@string/tabkey_preference" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

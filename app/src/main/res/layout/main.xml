@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:orientation="vertical"
+	android:background="@color/colorPrimary"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+	>
+
+	<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:tools="http://schemas.android.com/tools"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:background="@android:color/background_dark"
+		android:gravity="center_vertical"
+		tools:ignore="Suspicious0dp">
+		<TextView android:id="@+id/title_left_text"
+			android:layout_alignParentLeft="true"
+			android:ellipsize="end"
+			android:singleLine="true"
+			android:layout_width="wrap_content"
+			android:layout_height="fill_parent"
+			android:layout_alignParentStart="true" />
+
+		<TextView
+			android:id="@+id/title_right_text"
+			android:layout_alignParentRight="true"
+			android:ellipsize="end"
+			android:singleLine="true"
+			android:layout_width="wrap_content"
+			android:layout_height="fill_parent"
+			android:textColor="#fff"
+			android:layout_alignParentEnd="true"
+			/>
+	</RelativeLayout>
+
+
+    <com.softhouse.blueterm3.EmulatorView
+		android:id="@+id/emulatorView"
+		android:layout_marginTop="0dp"
+		android:layout_width="match_parent"
+	      android:layout_height="match_parent"
+	      android:layout_alignParentLeft="true"
+
+	      >
+	</com.softhouse.blueterm3.EmulatorView>
+</LinearLayout>

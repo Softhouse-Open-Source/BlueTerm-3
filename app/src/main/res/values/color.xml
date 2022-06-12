@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <color name="colorPrimary">#DAA520</color>
+    <color name="colorPrimaryBlue">#519dcb</color>
+    <color name="colorPrimaryDark">#49637b</color>
+    <color name="lightText">#ffffff</color>
+    <color name="darkerBackground">#969696</color>
+    <color name="wizardButtonColorOne">@android:color/white</color>
+    <color name="wizardIndicatorBackgroundColor">@color/darkerBackground</color>
+    <color name="defaultTextColor">@color/lightText</color>
+
+
+</resources>
