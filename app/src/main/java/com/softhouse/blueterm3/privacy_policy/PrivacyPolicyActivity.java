@@ -49,9 +49,8 @@ public class PrivacyPolicyActivity extends Activity {
      * This function is responsible for getting the privacy policy HTML content
      */
     private String currentPrivacyPolicy()  {
-        return "getString()";
+        return "Add you privacy policy url";
     }
-
 
     /**
      * This function is responsible for click listeners regarding this activity
@@ -74,8 +73,4 @@ public class PrivacyPolicyActivity extends Activity {
         });
 
     }
-
-
-
-
 }

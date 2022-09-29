@@ -81,7 +81,6 @@ public class BlueTerm extends Activity {
      */
     public static final boolean LOG_UNKNOWN_ESCAPE_SEQUENCES = DEBUG && false;
 
-
     /**
      * The tag we use when logging, so that our messages can be distinguished
      * from other messages in the log. Public because it's used by several
@@ -680,7 +679,7 @@ public class BlueTerm extends Activity {
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.option_menu, menu);
         mMenuItemConnect = menu.getItem(0);
-        mMenuItemStartStopRecording = menu.getItem(2);
+        mMenuItemStartStopRecording = menu.getItem(3);
         return true;
     }
 
@@ -747,7 +746,6 @@ public class BlueTerm extends Activity {
                 show();
     }
 
-
     private void doStartRecording() {
         File sdCard = Environment.getExternalStorageDirectory();
 
@@ -767,7 +765,6 @@ public class BlueTerm extends Activity {
         mMenuItemStartStopRecording.setTitle(R.string.menu_start_logging);
         Toast.makeText(getApplicationContext(), getString(R.string.menu_logging_stopped), Toast.LENGTH_SHORT).show();
     }
-
 
     private void showAboutDialog() {
         mAboutDialog = new Dialog(BlueTerm.this);
@@ -817,7 +814,6 @@ public class BlueTerm extends Activity {
         }
     }
 
-
     public void hideKeyboard() {
         InputMethodManager imm = (InputMethodManager) getSystemService(Activity.INPUT_METHOD_SERVICE);
         View view = getCurrentFocus();
@@ -828,7 +824,6 @@ public class BlueTerm extends Activity {
 
         if (mEmulatorView != null)
             mEmulatorView.updateSize();
-
     }
 
 }
